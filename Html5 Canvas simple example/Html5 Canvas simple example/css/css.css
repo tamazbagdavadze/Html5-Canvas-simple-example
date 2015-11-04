@@ -4,3 +4,12 @@
 canvas {
     border: 1px red dotted;
 }
+
+label {
+    display: block;
+}
+
+
+.inputGroup {
+    display: inline-block;
+}

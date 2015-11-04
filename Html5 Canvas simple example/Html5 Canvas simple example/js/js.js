@@ -3,6 +3,11 @@
 window.onload = function () {
 
     var canvas = document.getElementById("canvas1");
+    var sizeModifier = document.getElementById("sizeModifier");
+    var speedModifier = document.getElementById("speedModifier");
 
-    example.init(canvas);
+    Example.registerSizeChangedEventTriggerDomElement(sizeModifier);
+    Example.registerSpeedChangedEventTriggerDomElement(speedModifier);
+
+    Example.init(canvas);
 }
