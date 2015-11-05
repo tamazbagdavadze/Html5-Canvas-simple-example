@@ -37,8 +37,6 @@ var Example = function() {
 
     /**
      * draws circle with inner circles
-     * @param {} crds 
-     * @returns {} 
      */
     function drawShape(crds) {
         for (let i = 0; i < initialRadius; i += 2) {
@@ -48,7 +46,6 @@ var Example = function() {
 
     /**
      * main draw function
-     * @returns {} 
      */
     function drawFull() {
         drawShape(center1, initialRadius);
@@ -94,10 +91,10 @@ var Example = function() {
         stopRender();
 
         var width = parseInt(e.target.value, 10) * 100;
-        width -= width % 100;
+        width -= width % 100; // TODO delete
 
         var height = width / 2;
-        height -= height % 100;
+        height -= height % 100; // TODO make smarter
 
         domElement.setAttribute("height",  height + "px");
         domElement.setAttribute("width", width + "px");
